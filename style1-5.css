@@ -1,0 +1,188 @@
+/*----- For Smooth Page Scrolling With the Navigation Buttons -----*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*----- General Page Formatting -----*/
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background: linear-gradient(to bottom, #a48c42 0%, #1f1f1f 16.66%, #1f1f1f 33.33%, #1f1f1f 50%, #1f1f1f 66.66%, #608d7c 100%);
+}
+
+
+/*----- Chapter Name -----*/
+.chapterName {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    background-color: #1f1f1f;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    
+}
+
+
+/*----- Subtitles -----*/
+h2 {
+    color: #f0f0f0;
+    text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*----- Content -----*/
+.section {
+    color: #608d7c;
+    background-color: #f0f0f0;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+ul, p {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: disc;
+}
+
+ul img {
+    width: 400px;
+    margin-bottom: 1%;
+    border-radius: 10px;
+}
+
+figcaption {
+    width: 400px;
+    color: #1f1f1f;
+    font-size: 12px;
+}
+
+figure a {
+    text-decoration: none;
+    color: #1f1f1f;
+    transition: 0.1s ease;
+}
+
+figure a:hover {
+    color: #608d7c;
+}
+
+.inLine {
+    display: flex;
+}
+
+.inLine img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.codeScreen {
+    color: #f0f0f0;
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inLineCode {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.inLineCode img {
+    width: 730px;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.codeBar {
+    color: #f0f0f0;
+    background-color: #1f1f1f;
+    width: 350px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*----- Page Navigation Buttons -----*/
+h1 {
+    color: #f0f0f0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pageButton {
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.pageButtonHover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+}
+
+.pageButtonHover:hover .pageButton {
+    background-color: #FFD966;
+}
+
+
+/*----- Back-to-Top Button -----*/
+
+.topArrow {
+    display: flex;
+    background-color:#80C0A8;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    justify-content: center;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.topArrow span {
+    color: #f0f0f0;
+    font-size:30px;
+    transition: 0.2s ease;
+}
+
+.topArrow:hover {
+    background-color: #6aa08c;
+}
+
+.topArrow:hover span {
+    transform: translateY(-3px);
+}

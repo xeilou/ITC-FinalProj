@@ -1,0 +1,229 @@
+/*----- For Smooth Page Scrolling With the Navigation Buttons -----*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*----- General Page Formatting -----*/
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*----- Text-Based Brand Logo -----*/
+header h1 {
+    font-size: 30px;
+    font-family: monospace;
+    cursor: pointer;
+}
+.vscodeYellow {
+    color: #FFD966;
+}
+.darkYellow {
+    color: #FFB518;
+}
+
+.vscodeGreen {
+    color: #80C0A8;
+}
+
+.vscodeWhite {
+    color: #f0f0f0;
+}
+
+
+/*----- Navigation Bar -----*/
+header {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #80C0A8;
+}
+
+
+/*----- Introduction Banner -----*/
+.introduction {
+    background-image: url('background.png');
+    background-size: cover;
+    padding: 329px 0;
+}
+
+.introduction h1{
+    font-size: 100px;
+    text-align: center;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 3px black;
+    margin-top: -146px;
+}
+
+
+/*----- Introduction Description -----*/
+.introduction p{
+    font-family: 'Cascadia Code', monospace;
+    color: #ce9178;
+    text-shadow: 0 0 5px #ce9178, 1px 0px 10px #ce9178;
+    margin-top: -85px;
+    margin-left: 104px;
+}
+
+.underlineText {
+    text-decoration: underline;
+}
+
+
+/*----- Courses Section -----*/
+.courses {
+    background: linear-gradient(to bottom, #1f1f1f 0%, #1f1f1f 16.66%, #272727 33.33%, #464646 50%, #787878 66.66%, #ffffff 100%);
+    padding: 60px 0;
+}
+
+.courses h2 {
+    color: #fff;
+}
+
+.course {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.courseHover {
+    text-decoration: none;
+    color: #1f1f1f;
+    cursor: pointer;
+}
+
+.courseHover:hover .course {
+    background-color: #6aa08c;
+}
+
+.comingSoon {
+    text-decoration: none;
+    color: inherit;
+    cursor:default;
+}
+
+.comingSoon:hover .course {
+    background-color: #bababa;
+}
+
+/*----- About Us and Contacts -----*/
+
+.inLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about p, .contacts p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/*----- About Us Section -----*/
+.aboutContainer {
+    width: 800px;
+}
+
+.about {
+    padding: 60px 0;
+}
+
+
+/*----- Contact Details Section -----*/
+.contacts {
+    padding: 60px 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #666;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+
+/*----- Copyright Notice -----*/
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*----- Back-to-Top Button -----*/
+
+.topArrow {
+    display: flex;
+    background-color:#80C0A8;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    justify-content: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.topArrow span {
+    color: #f0f0f0;
+    font-size:30px;
+    transition: 0.2s ease;
+}
+
+.topArrow:hover {
+    background-color: #6aa08c;
+}
+
+.topArrow:hover span {
+    transform: translateY(-3px);
+}
